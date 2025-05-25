@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lưu bút gửi chiu gay</title>
+    <style>
+        @font-face {
+            font-family: 'Iciel Brittany Signature Regular';
+            src: url('fonts/IcielBrittanySignature-Regular.woff2') format('woff2'),
+                 url('fonts/IcielBrittanySignature-Regular.woff') format('woff'),
+                 url('fonts/iCielBrittanySignature-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #333; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -999; 
+            background-image: url('wallpaper.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            filter: blur(5px) brightness(0.8); 
+        }
+
+        #hello-kitty-element {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1; 
+            max-width: 250px;
+            width: 60%;
+            height: auto;
+            opacity: 0.6;
+        }
+
+        .container {
+            background-color: #FFF2EB; 
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            position: relative; 
+            z-index: 1; 
+        }
+
+        .image-frames {
+            display: flex;
+            justify-content: space-around;
+            align-items: center; 
+            margin-bottom: 25px;
+        }
+
+        .image-frame {
+            width: 45%;
+            aspect-ratio: 1 / 1;
+            background-color: #f0f0f0;
+            border-radius: 15px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 0.9em; 
+            color: #555; 
+            overflow: hidden; 
+            border: 2px solid #ddd;
+        }
+
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .dear-text {
+            font-family: 'Iciel Brittany Signature Regular', cursive;
+            font-size: 1.8em;
+            font-weight: normal;
+            margin-bottom: 8px;
+            color: #AD1457; 
+        }
+
+        .message-content {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #212121;
+        }
+
+        .signature-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .signature-description {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #424242;
+            margin-bottom: 10px;
+        }
+
+        .signature-image {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 8px;
+        }
+
+        .signature-name {
+            font-size: 1em;
+            font-weight: bold;
+            color: #212121;
+        }
+
+        @media (max-width: 480px) {
+            body::before {
+                filter: blur(3px) brightness(0.7); 
+            }
+            #hello-kitty-element {
+                max-width: 180px;
+                width: 50%;
+                opacity: 0.5;
+            }
+            .container {
+                padding: 15px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                background-color: #FFF2EB; 
+            }
+            .image-frame {
+                font-size: 0.8em; 
+            }
+            .dear-text {
+                font-size: 1.5em;
+                margin-bottom: 6px;
+            }
+            .message-content {
+                font-size: 0.95em;
+            }
+            .signature-image {
+                width: 120px;
+            }
+            .signature-section {
+                margin-top: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img id="hello-kitty-element" src="hello_kitty.png" alt="Hello Kitty Background">
+
+    <div class="container">
+        <div class="image-frames">
+            <div class="image-frame">
+                <img src="pic1.png" alt="Ảnh kỷ niệm 1">
+            </div>
+            <div class="image-frame">
+                chờ ảnh 26/5 hihi
+            </div>
+        </div>
+
+        <div class="dear-text" id="dearName">
+            dear chiu gay,
+        </div>
+
+        <div class="message-content" id="messageContent">helo sv chill sếch
+Dm 3 năm r cơ à? Dm 3 năm làm nên 1 tình bạn đặc biệt vloz. Dm hnhu hồi l10 t với m hnhu ch nch với nhau mấy (xong hnhu còn chửi nhau 1 2 lần dcm dhieu chửi tbm clg =)) ) nma xong h lại chơi dc với nhau hihi. M với t lại là nạn nhân của sv mặt vuông, mà dm dhieu hồi đấy t với m bị clg xong lại nthe dc ưtf?. Xong m còn bựa vcc dm lắm lúc m nhại tbm bố cay nma bcuoi dcd dcm =)))). Nghĩ sắp đ dc cùng lớp th loz nữa cũng buồn lắm chứ, nên là dmmm có chết cũng đ đc từ bỏ tình bạn này nhs để có gì sau t còn nhờ m bao nuôi nhs hihi. ờm thra t muốn nói nữa nma t mat goc tviet hihi. DCMMM M PHẢI THỦ KHOA NV1 CHO T NHỚ CHƯA??!? hihi chắc v thoi, dù sau này m có buồn cgi cũng ph kể cho t nhs ❤️‍🩹. T quý m nhiều hơn ngày hqua và ít hơn ngày mai hihi (th loz gay)
+        </div>
+
+        <div class="signature-section">
+            <div class="signature-description">
+                kẻ sếch nhất vn
+            </div>
+            <img src="image_0cc929.png" alt="Chữ ký Khôi" class="signature-image">
+            <div class="signature-name">
+                Nguyễn Cảnh Khôi
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript functions (nếu cần)
+    </script>
+
+</body>
+</html>
